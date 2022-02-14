@@ -4,13 +4,9 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElButton: typeof import('element-plus/es')['ElButton']
-    ElCol: typeof import('element-plus/es')['ElCol']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
-    ElResult: typeof import('element-plus/es')['ElResult']
-    ElRow: typeof import('element-plus/es')['ElRow']
     ElTooltip: typeof import('element-plus/es')['ElTooltip']
-    ExampleMarkdown: typeof import('./components/ExampleMarkdown.md')['default']
+    ExampleMarkdown: typeof import('./components/exampleMarkdown.md')['default']
     IAkarIconsGithubFill: typeof import('~icons/akar-icons/github-fill')['default']
     IMdiContentDuplicate: typeof import('~icons/mdi/content-duplicate')['default']
     IMdiHomeSearchOutline: typeof import('~icons/mdi/home-search-outline')['default']
