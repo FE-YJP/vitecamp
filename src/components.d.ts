@@ -4,9 +4,12 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ElButton: typeof import('element-plus/es')['ElButton']
+    ElCol: typeof import('element-plus/es')['ElCol']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
+    ElResult: typeof import('element-plus/es')['ElResult']
+    ElRow: typeof import('element-plus/es')['ElRow']
     ExampleMarkdown: typeof import('./components/exampleMarkdown.md')['default']
-    FloatBtn: typeof import('./components/FloatBtn.vue')['default']
     IIcRoundBook: typeof import('~icons/ic/round-book')['default']
     IIcRoundLocalMovies: typeof import('~icons/ic/round-local-movies')['default']
     IIcSharpPerson: typeof import('~icons/ic/sharp-person')['default']

@@ -15,7 +15,7 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 const TabClass = 'w-1/4 p-2 flex justify-center items-center text-blue-500';
 </script>
 

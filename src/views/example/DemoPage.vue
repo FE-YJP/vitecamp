@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref, reactive } from 'vue';
+import { onMounted, reactive } from 'vue';
 import { useMouse, useShare, useLocalStorage } from '@vueuse/core';
 import loginApi from '@/api/modules/login';
 
@@ -80,9 +80,6 @@ onMounted(() => {
 
   const mouse1 = reactive(useMouse());
   console.log('mouse_', mouse1.x);
-
-  const isDark = usePreferredDark();
-  console.log('isDark', isDark.value);
 
   const store = useLocalStorage('my-storage', {
     name: 'Apple',
