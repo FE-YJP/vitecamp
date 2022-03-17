@@ -48,10 +48,15 @@ axiosInstance.interceptors.response.use(
     return Promise.reject(error);
   },
 );
+const DefaultParams = {
+  APPID: '__UNI__1EC916D',
+  PLATFORM: 'h5',
+  LOCALE: 'LOCALE',
+};
 const service = {
-  get: (url: string, data?: object) => axiosInstance.get(url, { params: data }),
-  post: (url: string, data?: object) => axiosInstance.post(url, data),
-  put: (url: string, data?: object) => axiosInstance.put(url, data),
+  get: (url: string, data?: object) => axiosInstance.get(url, { params: { ...data, ...DefaultParams } }),
+  post: (url: string, data?: object) => axiosInstance.post(url, { ...data, ...DefaultParams }),
+  put: (url: string, data?: object) => axiosInstance.put(url, { ...data, ...DefaultParams }),
   delete: (url: string, data?: object) => axiosInstance.delete(url, data),
   upload: (url: string, file: File) =>
     axiosInstance.post(url, file, {

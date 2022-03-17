@@ -6,6 +6,12 @@
       </router-link>
     </el-tooltip>
 
+    <el-tooltip content="示例DEMO">
+      <router-link class="icon-btn mx-2" to="/demo">
+        <i-fa-solid-democrat style="font-size: 1.3em" />
+      </router-link>
+    </el-tooltip>
+
     <el-tooltip :content="isDark ? '点击切换为亮色主题' : '点击切换为暗黑主题'">
       <button class="icon-btn mx-2 !outline-none" @click="toggleDark()">
         <i-ph-cloud-moon-bold v-if="isDark" style="font-size: 1.3em" />

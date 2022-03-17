@@ -15,7 +15,6 @@
           <template v-if="!item.isEnd"> | </template>
         </template>
       </p>
-      <div>Before coding , I recommended your IDE setup <strong>VSCode</strong> + <strong>Volar</strong></div>
     </div>
   </div>
 </template>
